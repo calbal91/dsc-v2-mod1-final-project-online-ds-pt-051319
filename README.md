@@ -42,18 +42,19 @@ We first address missing spurious data, dropping columns that are mostly NAN val
 
 We can create histograms of each feature to check for outliers. We can trim any properties from the dataset that are vastly unrepresentitive of the property market (e.g. houses selling for more than $1m, or with more than 7 bedrooms, etc.)
 
-![Seattle](https://github.com/calbal91/project-king-county-housing/blob/master/Images/Distributions.jpg)
+![Seattle](https://github.com/calbal91/project-king-county-housing/blob/master/Images/Distributions.png)
 
 There may also be hidden outliers, which are unrepresentitive, but may not show up if we look at the features in isolation. For example, properties may be very expensive relative to their size, but may have a price that might not look silly in and of itself. We can thus create new features, such as price per square foot, which will help us further narrow down the dataset.
 
 We can also visualise non-obvious categorical variables using scatter plots:
 
-![Seattle](https://github.com/calbal91/project-king-county-housing/blob/master/Images/Scatters.jpg)
+![Seattle](https://github.com/calbal91/project-king-county-housing/blob/master/Images/Scatters.png)
 
 These will need to be one hot encoded ahead of modelling.
 
 ### Geography
 One key visualisation that comes out of the EDA is a scatter plot of house latitude vs longitude. As expected, this produces a map.
+
 ![Seattle](https://github.com/calbal91/project-king-county-housing/blob/master/Images/ScatterMap.png)
 
 As for the effect of geography on price, we can see that there appears to be some kind a north/south divide, however this is not universal (the very North of the map is mostly blue, lower value properties, having been mostly purple slightly further South). Thus, we can not assume a linear relationship between price, and either of longitude or latitude.
