@@ -10,6 +10,8 @@ The King County housing market is worth over $11bn annually, with 60 properties 
 * Evaluate the profitability of renovation work done to properties
 * Ensure that property is not sold below its intrinsic value
 
+![Seattle](https://github.com/calbal91/project-king-county-housing/blob/master/Images/Seattle.jpg)
+
 ## The Technologies Used
 * Pandas for Data Manipulation
 * Matplotlib / Seaborn for Data Visualisation
@@ -37,6 +39,7 @@ We should then verify our model using:
 
 
 ## The Model
+
 
 
 
